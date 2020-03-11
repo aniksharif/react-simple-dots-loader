@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'react-simple-dots-loader'
+import SimpleLoader from 'react-simple-dots-loader'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <SimpleLoader color='red' />
       </div>
     )
   }

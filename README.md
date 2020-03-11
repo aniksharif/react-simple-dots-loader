@@ -15,12 +15,12 @@ npm install --save react-simple-dots-loader
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-simple-dots-loader'
+import SimpleLoader from 'react-simple-dots-loader'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <SimpleLoader color="any color you like"/>
     )
   }
 }

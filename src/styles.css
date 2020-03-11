@@ -1,8 +1,81 @@
 /* add css styles here (optional) */
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.dribble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: #fff;
+  filter: contrast(20);
 }
+.dribble .point {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  /* background: #000; */
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: point 2.8s infinite;
+}
+.dribble .points {
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: points 2.8s infinite;
+}
+.dribble .points span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  /* background: #000; */
+  border-radius: 50%;
+}
+@-moz-keyframes point {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@-webkit-keyframes point {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@-o-keyframes point {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@keyframes point {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@-moz-keyframes points {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+@-webkit-keyframes points {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+@-o-keyframes points {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+@keyframes points {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+

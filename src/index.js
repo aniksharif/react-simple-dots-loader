@@ -3,19 +3,24 @@ import PropTypes from 'prop-types'
 
 import styles from './styles.css'
 
-export default class ExampleComponent extends Component {
+export default class SimpleLoader extends Component {
   static propTypes = {
-    text: PropTypes.string
+    color: PropTypes.string
   }
 
   render() {
     const {
-      text
+      color
     } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div className={styles.dribble}>
+        <span className={styles.point} style={{backgroundColor: color}} />
+        <div className={styles.points} >
+          <span style={{backgroundColor: color}} />
+          <span style={{backgroundColor: color}} />
+          <span style={{backgroundColor: color}} />
+        </div>
       </div>
     )
   }

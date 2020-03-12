@@ -9,6 +9,8 @@
 ```bash
 npm install --save react-simple-dots-loader
 ```
+## Demo
+[Demo link](https://codesandbox.io/s/naughty-hypatia-fkqc6?fontsize=14&hidenavigation=1&theme=dark)
 
 ## Usage
 
